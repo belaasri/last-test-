@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube to MP3 & MP4 Converter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/fav.png" type="image/png" sizes="32x32">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="container container-medium">
+                <div class="navigation-flex-1">
+                    <a href="./index.html" class="navigation-logo-container focus-style-1 no-focus-style">
+                        <img class="navigation-logo" src="./images/logo.png" alt="logo">
+                        <span class="navigation-logo-text">YouTube Converter</span>
+                    </a>
+                    <div class="navigation-options-container">
+                        <ul>
+                            <li class="btn  btn-1-white "><a href="./convert-mp4.html">
+                                    Convert to MP4</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="download-section">
+            <div class="container container-medium">
+                <div class="flex-1">
+                    <h1 class="title">Youtube to MP3</h1>
+                    <p class="title-sub">
+                        Download MP3 from Youtube with our YouTube to MP3 converter and downloader.
+                    </p>
+                    <div class="convert-container">
+                        <form id="form" action="#" method="POST">
+                            <input required type="url" data-is="url" type="text" class="input-style-1"
+                                placeholder="Paste YouTube link here">
+                        </form>
+                        <button data-is="convert"
+                            class="btn convert-btn btn-1-primary focus-style-1 no-focus-style">Convert MP3</button>
+                    </div>
+                    <span class="danger-msg hide display-block margin-top-10" id="msg"></span>
+                    <div class="flex-2 media-section hide"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cards margin-top-100 margin-bottom-100">
+            <div class="container container-medium">
+                <div class="grids">
+                    <div class="grid grid-33">
+                        <div class="grid-gap">
+                            <img class="card-icon" src="./images/copy-icon.png" alt="copy icon">
+                            <h2 class="card-title margin-top-10">Copy and paste YouTube URL</h2>
+                        </div>
+                    </div>
+                    <div class="grid grid-33">
+                        <div class="grid-gap">
+                            <img class="card-icon" src="./images/select-icon.png" alt="select icon">
+                            <h2 class="card-title margin-top-10">Select the best format</h2>
+                        </div>
+                    </div>
+                    <div class="grid grid-33">
+                        <div class="grid-gap">
+                            <img class="card-icon" src="./images/download-icon.png" alt="download icon">
+                            <h2 class="card-title margin-top-10">Download it in<br>MP3 & MP4</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container container-medium">
+            <div class="footer-links-container">
+                <ul class="footer-links">
+                    <li class="btn btn-1-secondary"><a href="#">Contact</a></li>
+                    <li class="btn btn-1-secondary"><a href="#">FAQ</a></li>
+                    <li class="btn btn-1-secondary"><a href="#">Privacy Policy</a></li>
+                    <li class="btn btn-1-secondary"><a href="#">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyrights">
+                <p>@ 2022 uConverter.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    let state = {
+        page: 'mp3'
+    }
+</script>
+<script src="./js/jquery.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
